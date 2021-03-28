@@ -1831,6 +1831,10 @@ const definedMessages = defineMessages({
         defaultMessage: 'Litecoin',
         id: 'TR_NETWORK_LITECOIN',
     },
+    TR_NETWORK_LITECOIN_TESTNET: {
+        defaultMessage: 'Litecoin Testnet',
+        id: 'TR_NETWORK_LITECOIN_TESTNET',
+    },
     TR_NETWORK_NAMECOIN: {
         defaultMessage: 'Namecoin',
         id: 'TR_NETWORK_NAMECOIN',

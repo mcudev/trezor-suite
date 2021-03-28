@@ -80,7 +80,7 @@ const TooltipLabel = ({
         </AddressLabel>
     );
 
-    if (symbol === 'ltc' && accountType === 'segwit') {
+    if ((symbol === 'ltc' || symbol === 'tltc') && accountType === 'segwit') {
         // additional tooltip with LTC addresses explanation
         return (
             <QuestionTooltip

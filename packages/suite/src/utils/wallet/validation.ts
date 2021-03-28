@@ -2,7 +2,7 @@ import addressValidator from 'trezor-address-validator';
 import { Account } from '@wallet-types';
 
 const isTestnet = (symbol: Account['symbol']): boolean => {
-    const testnets = ['test', 'txrp', 'trop'];
+    const testnets = ['test', 'tltc', 'txrp', 'trop'];
     return testnets.includes(symbol);
 };
 
@@ -10,6 +10,8 @@ const getCoinFromTestnet = (symbol: Account['symbol']) => {
     switch (symbol) {
         case 'test':
             return 'btc';
+        case 'tltc':
+            return 'ltc';
         case 'txrp':
             return 'xrp';
         case 'trop':
@@ -29,6 +31,9 @@ export const isAddressDeprecated = (address: string, symbol: Account['symbol']) 
     // catch deprecated address formats
     // LTC starting with "3" and valid with a BTC format
     if (symbol === 'ltc' && address.startsWith('3') && isAddressValid(address, 'btc')) {
+        return 'LTC_ADDRESS_INFO_URL';
+    }
+    if (symbol === 'tltc' && address.startsWith('2') && isAddressValid(address, 'test')) {
         return 'LTC_ADDRESS_INFO_URL';
     }
     // BCH starting with "1" and valid with a BTC format

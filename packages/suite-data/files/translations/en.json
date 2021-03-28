@@ -828,6 +828,7 @@
 	"TR_NETWORK_ETHEREUM_CLASSIC": "Ethereum Classic",
 	"TR_NETWORK_ETHEREUM_TESTNET": "Ethereum Testnet",
 	"TR_NETWORK_LITECOIN": "Litecoin",
+	"TR_NETWORK_LITECOIN_TESTNET": "Litecoin Testnet",
 	"TR_NETWORK_NAMECOIN": "Namecoin",
 	"TR_NETWORK_NEM": "NEM",
 	"TR_NETWORK_STELLAR": "Stellar",

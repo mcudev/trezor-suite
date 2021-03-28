@@ -357,6 +357,29 @@ export default [
     },
     {
         blockchain: {
+            name: 'Litecoin Testnet',
+            worker: 'js/blockbook-worker.js',
+            server: [
+                'https://tltc1.test',
+            ],
+            debug: true,
+        },
+        data: {
+            address: '',
+            accountInfoOptions: {
+                page: 0,
+                pageSize: 25,
+            },
+            estimateFeeOptions: {
+                blocks: [1, 2, 10],
+            },
+            txid: '',
+            tx: '',
+            subscribe: '',
+        },
+    },
+    {
+        blockchain: {
             name: 'Namecoin',
             worker: 'js/blockbook-worker.js',
             server: ['https://nmc1.trezor.io', 'https://nmc2.trezor.io'],

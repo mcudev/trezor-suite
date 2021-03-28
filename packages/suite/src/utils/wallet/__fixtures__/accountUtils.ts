@@ -315,6 +315,7 @@ export const accountTitleFixture = [
     { symbol: 'dgb', title: 'TR_NETWORK_DIGIBYTE' },
     { symbol: 'doge', title: 'TR_NETWORK_DOGECOIN' },
     { symbol: 'ltc', title: 'TR_NETWORK_LITECOIN' },
+    { symbol: 'tltc', title: 'TR_NETWORK_LITECOIN_TESTNET' },
     { symbol: 'nmc', title: 'TR_NETWORK_NAMECOIN' },
     { symbol: 'vtc', title: 'TR_NETWORK_VERTCOIN' },
     { symbol: 'zec', title: 'TR_NETWORK_ZCASH' },

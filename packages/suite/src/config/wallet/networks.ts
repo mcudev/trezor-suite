@@ -316,6 +316,52 @@ const networks = [
         },
         features: ['rbf', 'sign-verify'],
     },
+    // Litecoin Testnet
+    {
+        name: 'Litecoin Testnet',
+        networkType: 'bitcoin',
+        symbol: 'tltc',
+        bip44: "m/84'/1'/i'",
+        testnet: true,
+        hasSignVerify: true,
+        decimals: 8,
+        explorer: {
+            tx: 'https://tltc1.test/tx/',
+            account: 'https://tltc1.test/xpub/',
+        },
+        features: ['sign-verify'],
+    },
+    {
+        name: 'Litecoin Testnet (segwit)',
+        networkType: 'bitcoin',
+        accountType: 'segwit',
+        symbol: 'tltc',
+        bip44: "m/49'/1'/i'",
+        testnet: true,
+        hasSignVerify: true,
+        decimals: 8,
+        explorer: {
+            tx: 'https://tltc1.test/tx/',
+            account: 'https://tltc1.test/xpub/',
+        },
+        features: ['sign-verify'],
+    },
+    {
+        name: 'Litecoin Testnet (legacy)',
+        networkType: 'bitcoin',
+        accountType: 'legacy',
+        symbol: 'tltc',
+        bip44: "m/44'/1'/i'",
+        testnet: true,
+        hasSignVerify: true,
+        decimals: 8,
+        explorer: {
+            tx: 'https://tltc1.test/tx/',
+            account: 'https://tltc1.test/xpub/',
+        },
+        features: ['sign-verify'],
+    },
+    //
     {
         name: 'Ethereum Ropsten',
         networkType: 'ethereum',
